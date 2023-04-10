@@ -1,4 +1,4 @@
-class person{
+class Person{
     constructor(nombre,apellido,altura,peso,colorOjos,colorPelo,yearOfBirth,hoobies=[]){
         this.nombre = nombre;
         this.apellido = apellido;
@@ -27,11 +27,11 @@ class person{
     }
 
     printHobbies(){
-        console.log(`los hobbies dque tiene ${this.name} son:`);
+        console.log(`los hobbies que tiene ${this.nombre} son:`);
         for (const hobbie in this.hobbies) {
             console.log(this.hobbies[hobbie]);
         }
     }
 }
 
-module.exports = {person};
+module.exports = {Person};

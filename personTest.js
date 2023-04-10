@@ -3,11 +3,11 @@ let myClassLib = require("./person");
 let hobbies = ["UNAGI","kpop","TBBT","origami"];
 let persona = new myClassLib.Person('German','strada',80,185,'marrones','castaño',1988,hobbies);
 
-let imc = persona.calcuarIMC();
+let imc = persona.calcularIMC();
 console.log(`IMC = ${imc}`);
 
 let edad = persona.calcularAge();
-console.log(`la edad de ${persona.name} es ${edad}.`);
+console.log(`la edad de ${persona.nombre} es ${edad}.`);
 
 persona.printAll();
 
